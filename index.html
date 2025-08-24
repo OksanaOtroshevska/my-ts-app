@@ -7,8 +7,43 @@
     <title>Мини-страница интернет-магазина</title>
     <link rel="stylesheet" href="./src/style.css">
   </head>
+
   <body>
+
+    <header class="cart">
+      <span class="cart-icon">🛒</span>
+      <span>Корзина:</span>
+      <span id="cart-count">0</span>
+    </header>
+
+    <main class="products">
+      <div class="product">
+        <img src="./media/AirPods Max.avif" alt="AirPods Max">
+        <h2>AirPods Max</h2>
+        <p>Apple AirPods Max Wireless headphones, Active noise cancellation at Pro level, Transparency mode, Personalized 3D audio, USB-C charging case, Midnight</p>
+        <p>Цена: 549$</p>
+        <button class="add-to-cart">В корзину</button>
+      </div>
+
+      <div class="product">
+        <img src="./media/AirPods Pro 2.avif" alt="AirPods Pro 2">
+        <h2>AirPods Pro 2</h2>
+        <p>Apple AirPods Pro 2 Wireless In-ear Headphones, Bluetooth Headphones, Active Noise Cancellation, Hearing Aid Function, Transparency Mode, Personalized 3D Audio, Hi-Fi Sound, H2 Chip, Charging via USB-C</p>
+        <p>Цена: 249$</p>
+        <button class="add-to-cart">В корзину</button>
+      </div>
+
+      <div class="product">
+        <img src="./media/Apple AirPods 4.avif" alt="Apple AirPods 4">
+        <h2>Apple AirPods 4</h2>
+        <p>Apple AirPods 4 Wireless Headphones, Bluetooth Headphones, Personalized 3D Audio, Protection for Sweat and Water, USB-C Charging Case, H2 Chip, up to 24 hours playback</p>
+        <p>Цена: 129$</p>
+        <button class="add-to-cart">В корзину</button>
+      </div>
+    </main>
+
     <div id="app"></div>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
