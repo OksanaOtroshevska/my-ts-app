@@ -1,0 +1,96 @@
+body {
+  background-color: #121212; 
+  color: #eaeaea;            
+  font-family: Arial, sans-serif;
+  margin: 0;             
+}
+
+.cart {
+  display: flex;             
+  align-items: center;       
+  gap: 8px;                  
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+
+  background-color: #1f1f1f; 
+  color: #eaeaea;
+  border-bottom: 2px solid #333;
+}
+
+#cart-count {
+  color: rgb(131, 0, 253);                
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  color: #eaeaea;
+  border: 1px solid #333;    
+  border-radius: 10px;        
+  padding: 15px;
+  background-color:  #1f1f1f;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;  
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #00c853; 
+  margin: 10px 0;
+}
+
+.add-to-cart {
+  margin-top: auto;           
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #7b797c;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-to-cart:hover {
+  background-color: #8900b3;
+}
+
+/* Планшеты (2 товара в ряд) */
+@media (max-width: 900px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Смартфоны (1 товар в ряд) */
+@media (max-width: 600px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  .cart {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+
+  .cart-icon {
+    font-size: 22px;
+  }
+}
