@@ -72,8 +72,16 @@ body {
   background-color: #8900b3;
 }
 
+.remove-from-cart {
+  background-color: #fdb124;
+}
+
+.remove-from-cart:hover {
+  background-color: #ceff1b;
+}
+
 /* Планшеты (2 товара в ряд) */
-@media (max-width: 900px) {
+@media (min-width: 601px) and (max-width: 900px) {
   .products {
     grid-template-columns: repeat(2, 1fr);
   }
